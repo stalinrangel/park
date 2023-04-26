@@ -1,0 +1,32 @@
+titulo-web=>Park Güell
+bienvenidos=>Consiga sus entradas para el Park Güell
+resumen=>Bienvenido a las entradas del Park Güell Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso y singular parque de Barcelona. Empiece a planear su visita hoy mismo.
+entradas=>Entradas
+elpark=>El Park Güell es un parque público de la ciudad de Barcelona, España, diseñado por el famoso arquitecto <strong>Antoni Gaudí.</strong> Situado en la colina del Carmelo, el parque es conocido por su diseño arquitectónico y paisajístico, así como por su coloridos mosaicos y estatuas. Es una popular atracción turística y un Patrimonio de la Humanidad de la UNESCO. Los visitantes del parque pueden explorar sus jardines, terrazas y edificios, y disfrutar de impresionantes vistas de la ciudad.
+tieneTres=>El Park Güell tiene tres entradas.
+tiene1=>1. Carrer de Larrard: Es la entrada principal. La más hermosa.
+tiene2=>2. Carretera del Carmel: Esta entrada está en el lado oeste del parque…
+leerMas=>Leer más
+horarios=>Horarios de apertura
+horarios1=>La obra maestra modernista de Gaudí, el Park Güell, es accesible al público todos los días del año y atrae a los visitantes con sus espectaculares vistas. Sin embargo, sus horarios varían en función de la temporada alta y baja…
+direcciones=>Direcciones
+direcciones1=>El Park Güell está situado en la colina del Carmelo, en los distritos de Gracia y Horta-Guinardó.
+direcciones2=>Para llegar, los visitantes pueden utilizar la línea 3 de metro y parar en la estación Lesseps…
+Aparcamiento=>Aparcamiento
+Aparcamiento1=>El Park Güell no dispone de aparcamiento propio para coches, pero puede elegir entre los aparcamientos cercanos disponibles. Parking Esperança I Güell: Disponible en la entrada del Park Güell…
+Reglas=>Reglas
+Reglas1=>Siendo la atracción más buscada de Barcelona, el Park Güell atrae a gente de todo el mundo. Por eso, para que todo vaya sobre ruedas, aquí tienes algunas normas que debes seguir…
+Mapa=>Mapa
+Mapa1=>El legendario Antoni Gaudí trabajó en el arreglo del jardín, que incluye sus extrañas callejuelas, edificios insólitos, juegos de agua, exquisitos mosaicos, creativas esculturas…
+tickes=>Park Güell Tickets
+tickes1=>Explore el Park Güell, una de las creaciones más notables de Gaudí en Barcelona. Descubra este magnífico parque verde rodeado de una arquitectura modernista mientras disfruta de unas impresionantes vistas de Barcelona.
+desde=>Desde
+sagrada=>Entradas Sagrada Familia
+sagrada1=>Entre en las atracciones más populares de Barcelona. La obra maestra en curso de Antoni Gaudí y el sitio más caliente de la UNSECO. Aproveche al máximo su visita disfrutando de tiempo ilimitado.
+Montserrat=>Subir y bajar turístico Montserrat
+Montserrat1=>En lugar de dedicar tiempo y esfuerzo a planificar sus propias vacaciones a Montserrat, tiene a su disposición dos viajes planificados. Consisten en un viaje en autobús con aire acondicionado de Barcelona a Montserrat.
+Roca=>Subir y bajar Roca Village
+Roca2=>Disfrute de la comodidad del Bus Turistic, comúnmente conocido como autobús hop-on, hop-off, que recorre Barcelona en dos rutas. Elija un pase que cubra 1-2 días para aprovechar…
+
+
+
