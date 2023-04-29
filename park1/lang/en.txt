@@ -1,8 +1,8 @@
-titulo-web=>My multilanguages site
+titulo-web=>Park Güell
 bienvenidos=>Get your Park Güell tickets
 resumen=>Welcome to Park Güell tickets! Here you can find all the information you need to plan your visit and purchase tickets for this beautiful and unique park in Barcelona. Start planning your visit today!
 entradas=>Tickets
-elpark=>its architectural and landscape design, as well as its colorful mosaics and statues. It is a popular tourist attraction and a UNESCO World Heritage Site. Visitors to the park can explore it’s gardens, terraces, and buildings, and enjoy stunning views of the city.
+elpark=>Park Güell is a public park in the city of Barcelona, Spain, designed by the famous architect <strong>Antoni Gaudí.</strong> Located on the Carmel Hill, the park is known for its architectural and landscape design, as well as its <strong>colorful mosaics and statues.</strong> It is a popular tourist attraction and a <strong>UNESCO World Heritage Site.</strong> Visitors to the park can explore it’s gardens, terraces, and buildings, and enjoy stunning views of the city.
 tieneTres=>El Park Güell tiene tres entradas.
 tiene1=>1. Carrer de Larrard: It’s the main entrance. The most beautiful. 
 tiene2=>2. Carretera del Carmel: This entrance is at the west side of the park…
