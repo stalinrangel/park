@@ -1,4 +1,6 @@
 titulo-web=>Park Güell
+menu1=>Billets Park Güell
+menu2=>Destinations
 bienvenidos=>Achetez vos billets pour le Park Güell
 resumen=>Bienvenue à Park Güell tickets! Vous trouverez ici toutes les informations nécessaires pour planifier votre visite et acheter des billets pour ce parc magnifique et unique à Barcelone. Commencez à planifier votre visite dès aujourd’hui !
 entradas=>Billets

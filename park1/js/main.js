@@ -170,9 +170,10 @@ window.onload = function () {
         processLang(data);
       }
     });
-  };  
+  };
 
-  console.log('detectar');
+  //setTimeout(() => {
+    
       var ln = navigator.language || navigator.userLanguage;
       /*Validar que no se encuentre en la pagina correspondiente a su idioma*/
       let pagActual = window.location.pathname;
@@ -203,8 +204,14 @@ window.onload = function () {
         document.getElementById("idio").innerHTML = " Italiano";
         img.setAttribute("src", "img/it.png");
       } else{
-        console.log("Otro idioma");
+        //alert("Otro idioma");
+        console.log('es')
+        loadLang('es');
+        //setSelectedValue("Español");
+        document.getElementById("idio").innerHTML = " Español";
+        img.setAttribute("src", "img/es.png");
       }
+  //}, 3000);
 }
   
 });

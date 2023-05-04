@@ -561,7 +561,7 @@ footer p { color: white; }
     top: -5px;
   }
 .list__inside{
-    min-width: 90px;
+    min-width: 100px;
     background: white;
     padding: 3px;
     color: #000 !important;
@@ -747,4 +747,10 @@ footer p { color: white; }
     .tm-form-group-3 {
         width: 100%;
     }    
+}
+@media screen and (max-width: 490px) {
+    .tm-top-bar .navbar-brand img { 
+        height: auto;
+        width: 200px;
+    }
 }
