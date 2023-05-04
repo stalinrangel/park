@@ -1,12 +1,11 @@
-/* 
 
+
+/* 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
-
 Primary color (light blue)  : #69c6ba
 Highlight color (pink)		: #c66995
 --------------------------------------
-
 */
 @font-face {
     font-family: Guell ;
@@ -535,8 +534,43 @@ footer p { color: white; }
     border: 0px;
 }
 .flag{
-    
+    height: 15px;
+    width: 23px;
 }
+.flags{
+    height: 15px;
+    width: 23px;
+}
+.lista{
+    visibility:visible;
+    cursor: pointer;
+    display: flex;
+}
+
+.nolista{
+    visibility: hidden;
+    cursor: pointer;
+}
+.list__show{
+    width: 0px;
+    border-left: 2px solid #303440;
+    transition: height .4s;
+    height: 0;
+    list-style: none;
+    position: relative;
+    top: -5px;
+  }
+.list__inside{
+    min-width: 90px;
+    background: white;
+    padding: 3px;
+    color: #000 !important;
+    float: left;
+}
+.list__inside:hover{
+    background: #edac2f;
+    color: black !important;
+  }
 
 @media screen and (max-width: 1080px) {
     .tm-tab-link-li { width: 25%; }
@@ -547,6 +581,18 @@ footer p { color: white; }
 }
 
 @media screen and (max-width: 991px) {
+    .lista{
+        position: relative;
+        left: -10px;
+    }
+    .flags{
+        position: absolute;
+        left: -30px;
+    }
+    .list__inside{
+        position: relative;
+        left: -44px;
+    }
     .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
         padding: 15px 20px;
         background: white;

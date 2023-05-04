@@ -45,13 +45,24 @@ http://www.templatemo.com/tm-511-journey
                             </button>
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-link">
-                                        <select class="test" id="test">
+                                    
+                                    <li class="nav-link" style="display: flex;" id="abrir">
+                                        
+                                        <ul id="paises" class="list__show nolista">
+                                            <li class="list__inside" id="eng"><img src="img/en.png" class="flag"> English</li>
+                                            <li class="list__inside" id="esp"><img src="img/es.png" class="flag"> Español</li>
+                                            <li class="list__inside" id="fra"><img src="img/fr.png" class="flag"> Français</li>
+                                            <li class="list__inside" id="ita"><img src="img/it.png" class="flag"> Italiano</li>
+                                        </ul>
+                                        <div class="lista" >
+                                            <img id="myImage" src="img/en.png" class="flags" style="margin-right: 3px;"><p style="color:black !important" id="idio" > Español</p>
+                                        </div>
+                                        <!--select class="test" id="test">
                                             <option value="English"><img src="img/en.png" alt="" class="flag"> English</option>
                                             <option value="Español"><img src="img/es.png" alt="" class="flag"> Español</option>
                                             <option value="Français"><img src="img/fr.png" alt="" class="flag"> Français</option>
                                             <option value="Italiano"><img src="img/it.png" alt="" class="flag"> Italiano</option>
-                                        </select>
+                                        </select-->
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
@@ -506,7 +517,7 @@ http://www.templatemo.com/tm-511-journey
                     <!-- Current Active Tab WITH "show active" classes in DIV tag -->
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
-                                <img src="img/3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/r1.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
                                     <h3 class="tm-recommended-title" data-lang="tickes">Asia Resort Hotel</h3>
                                     <p class="tm-text-highlight" data-lang="tickes">Singapore</p>
@@ -519,7 +530,7 @@ http://www.templatemo.com/tm-511-journey
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/7.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/r2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
                                     <h3 class="tm-recommended-title" data-lang="sagrada">Nullam eget est a nisl</h3>
                                     <p class="tm-text-highlight" data-lang="sagrada">Yangon, Myanmar</p>
@@ -533,7 +544,7 @@ http://www.templatemo.com/tm-511-journey
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/5.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/r3.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
                                     <h3 class="tm-recommended-title" data-lang="Montserrat">Proin interdum ullamcorper</h3>
                                     <p class="tm-text-highlight" data-lang="Montserrat">Bangkok, Thailand</p>
@@ -546,7 +557,7 @@ http://www.templatemo.com/tm-511-journey
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/6.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/r4.png" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
                                     <h3 class="tm-recommended-title" data-lang="Roca">Lorem ipsum dolor sit</h3>
                                     <p class="tm-text-highlight" data-lang="Roca">Vientiane, Laos</p>
@@ -855,7 +866,7 @@ http://www.templatemo.com/tm-511-journey
                 slidesToScroll: 1
             });
 
-            loadGoogleMap();                                       // Google Map                
+            //loadGoogleMap();                                       // Google Map                
             $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
         });
 
