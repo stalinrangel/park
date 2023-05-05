@@ -93,7 +93,7 @@ http://www.templatemo.com/tm-511-journey
                                 </div>    
                             </div>  <!-- col-xs-12 -->                      
                         </div> <!-- row -->
-                        <div class="row tm-banner-row" id="tm-section-search">
+                        <div class="row tm-banner-row2" id="tm-section-search">
 
                             <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
                                 <div class="form-row tm-search-form-row">                                
@@ -101,17 +101,17 @@ http://www.templatemo.com/tm-511-journey
                                         <!--label for="inputCity">Choose Your Destination</label>
                                         <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckIn">Seleccione fecha</label>
+                                            <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
                                             <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckOut">Elige hora</label>
+                                            <label for="inputCheckOut" data-lang="hora">Elige hora</label>
                                             <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora">
                                         </div>
                                     </div>
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                            <label for="inputRoom">Adulto</label>
+                                            <label for="inputRoom" data-lang="adultos">Adulto</label>
                                             <select name="room" class="form-control tm-select" id="inputRoom">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
@@ -126,7 +126,7 @@ http://www.templatemo.com/tm-511-journey
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
-                                            <label for="inputAdult">Reducido</label>     
+                                            <label for="inputAdult" data-lang="reducido">Reducido</label>     
                                             <select name="adult" class="form-control tm-select" id="inputAdult">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>
@@ -142,7 +142,7 @@ http://www.templatemo.com/tm-511-journey
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
 
-                                            <label for="inputChildren">Niño</label>                                            
+                                            <label for="inputChildren" data-lang="ninos">Niño</label>                                            
                                             <select name="children" class="form-control tm-select" id="inputChildren">
                                             	<option value="0" selected>0</option>
                                                 <option value="1">1</option>
@@ -170,7 +170,7 @@ http://www.templatemo.com/tm-511-journey
                                     </div-->
                                     <div class="form-group tm-form-group tm-form-group-pad">
                                         <label for="btnSubmit">&nbsp;</label>
-                                        <button type="submit" class="btn btn-primary tm-btn text-uppercase" id="btnSubmit">Reservar ahora</button>
+                                        <button type="submit" class="btn btn-primary tm-btn text-uppercase" id="btnSubmit" data-lang="reservar">Reservar ahora</button>
                                     </div>
                                 </div>                              
                             </form>                             
@@ -201,7 +201,7 @@ http://www.templatemo.com/tm-511-journey
                         <img src="img/4.jpg" alt="Image">    
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
-                        <h2 class="" data-lang="entradas">Entradas</h2>
+                        <h2 class="" data-lang="acceso">Entradas</h2>
                         <p class="tm-description" data-lang="tieneTres">El Park Güell tiene tres entradas.</p>
                         <p class="tm-description" data-lang="tiene1">1. Carrer de Larrard: Es la entrada principal. La más hermosa.</p>
                         <p class="tm-description" data-lang="tiene2">El Park Güell tiene tres entradas.</p>
@@ -770,7 +770,13 @@ http://www.templatemo.com/tm-511-journey
             </div> <!-- .tm-container-outer -->
 
             <footer class="tm-container-outer">
+                <div class="footer-1">
                 <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Adhook.es</p>
+                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="politica">Template Mo</a></p>
+                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="privacidad">Template Mo</a></p>
+                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="terminos">Template Mo</a></p>
+                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="condiciones">Template Mo</a></p>
+                </div>
             </footer>
         </div>
     </div> <!-- .main-content -->
@@ -862,7 +868,7 @@ http://www.templatemo.com/tm-511-journey
             //loadGoogleMap();                                       // Google Map                
             $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
         });
-
+        // js
     </script>             
 
 </body>

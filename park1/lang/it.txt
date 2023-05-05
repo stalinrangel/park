@@ -1,6 +1,13 @@
 titulo-web=>Park Güell
 menu1=>Park Güell Tickets
 menu2=>Destinazioni
+fecha=>Seleziona una data
+hora=>Scegli una fascia oraria
+adultos=>Adulto
+reducido=>Ridotto
+ninos=>Bambino
+reservar=>Prenotare ora
+acceso=>Punto di accesso
 bienvenidos=>Acquista i biglietti per Park Güell
 resumen=>Benvenuti ai biglietti per Park Güell! Qui potete trovare tutte le informazioni necessarie per pianificare la vostra visita e acquistare i biglietti per questo bellissimo e unico parco di Barcellona. Iniziate a pianificare la vostra visita oggi stesso!
 entradas=>Biglietti
@@ -29,3 +36,11 @@ Montserrat=Salite e scendete da Montserrat
 Montserrat1=>Invece di spendere tempo e fatica per organizzare la vostra vacanza a Montserrat, ci sono due viaggi programmati disponibili. Consiste in un viaggio in autobus con aria condizionata da Barcellona a Montserrat.
 Roca=>Salite e scendete dal villaggio di Roca
 Roca2=>Godetevi la comodità di un Bus Turistic, comunemente noto come bus hop-on, hop-off, che viaggia per Barcellona su due percorsi. Scegliete un pass che copra 1-2 giorni per approfittare di più…
+politica=>Informativa sui cookie
+privacidad=>Informativa sulla privacy
+terminos=>Termini e condizioni
+condiciones=>Condizioni generali di accesso e utilizzo
+
+
+
+

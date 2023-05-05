@@ -1,6 +1,13 @@
 titulo-web=>Park Güell
 menu1=>Park Güell Tickets
 menu2=>Destinations
+fecha=>Select a date
+hora=>Choose a timeslot
+adultos=>Adult
+reducido=>Reduced
+ninos=>Child
+reservar=>Book now
+acceso=>Access point
 bienvenidos=>Get your Park Güell tickets
 resumen=>Welcome to Park Güell tickets! Here you can find all the information you need to plan your visit and purchase tickets for this beautiful and unique park in Barcelona. Start planning your visit today!
 entradas=>Tickets
@@ -29,3 +36,11 @@ Montserrat=>Hop on Hop off Montserrat
 Montserrat1=>Instead of spending the time and hassle planning your own vacation to Montserrat, there are two planned trips available. They consist of an air-conditioned bus ride back from Barcelona to Montserrat.
 Roca=>Hop on Hop off Roca Village
 Roca2=>Enjoy the convenience of a Bus Turistic commonly known as a hop-on, hop-off bus as it travels throughout Barcelona on two routes. Choose a pass that covers 1-2 days to take advantage of the more…
+politica=>Cookies Policy
+privacidad=>Privacy Policy
+terminos=>Terms and Conditions
+condiciones=>Legal Advice
+
+
+
+
