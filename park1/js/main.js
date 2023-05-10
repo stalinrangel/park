@@ -24,6 +24,7 @@ window.onload = function () {
         total1.style.visibility="visible";
         total2.style.visibility="visible";
         document.getElementById("total2").innerHTML=costo+"€";
+        localStorage.setItem('total',costo+"€");
       }else{
         total1.style.visibility="hidden";
         total2.style.visibility="hidden";
@@ -46,8 +47,10 @@ window.onload = function () {
     localStorage.setItem('adulto',inputRoom.value);
     localStorage.setItem('reducido',inputAdult.value);
     localStorage.setItem('nino',inputChildren.value);
-
-    window.location.href = "pagos.html";
+    if (costo>0) {
+      window.location.href = "pagos.html";
+    }
+    
   }
 
   

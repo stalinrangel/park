@@ -19,9 +19,10 @@ http://www.templatemo.com/tm-511-journey
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="js/main.js"></script>                                   <!-- Templatemo style -->
-
+    <script src="js/pagos.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
             <!--[if lt IE 9]>
@@ -37,7 +38,7 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
-                            <a class="navbar-brand mr-auto" href="#">
+                            <a class="navbar-brand mr-auto" href="index.html">
                                 <img src="img/logo.png" alt="Site logo">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +47,7 @@ http://www.templatemo.com/tm-511-journey
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                                 <ul class="navbar-nav ml-auto">
                                     
-                                    <li class="nav-link" style="display: flex;" id="abrir">
+                                    <!--li class="nav-link" style="display: flex;" id="abrir">
                                         
                                         <ul id="paises" class="list__show nolista">
                                             <li class="list__inside" id="eng"><img src="img/en.png" class="flag"> English</li>
@@ -63,13 +64,13 @@ http://www.templatemo.com/tm-511-journey
                                             <option value="Français"><img src="img/fr.png" alt="" class="flag"> Français</option>
                                             <option value="Italiano"><img src="img/it.png" alt="" class="flag"> Italiano</option>
                                         </select-->
-                                    </li>
+                                    <!--/li>
                                     <li class="nav-item">
                                         <a class="nav-link active" data-lang="menu1">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#4a" data-lang="menu2">Destinations</a>
-                                    </li>
+                                    </li-->
                                     
                                 </ul>
                             </div>                            
@@ -79,116 +80,73 @@ http://www.templatemo.com/tm-511-journey
             </div> <!-- .tm-top-bar -->
 
         <div class="tm-page-wrap mx-auto">
-            <section class="tm-banner">
-                <div class="tm-container-outer tm-banner-bg">
-                    <div class="container">
-
-                        <div class="row tm-banner-row tm-banner-row-header">
-                            <div class="col-xs-12">
-                                <div class="tm-banner-header">
-                                    <h1 class="text-uppercase tm-banner-title" data-lang="bienvenidos">Consiga sus entradas para el Park Güell</h1>
-                                    <img src="img/dots-3.png" alt="Dots">
-                                    <p class="tm-banner-subtitle" data-lang="resumen">Bienvenido a las entradas del Park Güell Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso y singular parque de Barcelona. Empiece a planear su visita hoy mismo.</p>
-                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
-                                </div>    
-                            </div>  <!-- col-xs-12 -->                      
-                        </div> <!-- row -->
-                        <div class="row tm-banner-row2" id="tm-section-search">
-
-                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-                                <div class="form-row tm-search-form-row">                                
-                                    
-                                    <div class="form-group tm-form-group tm-form-group-1">                                    
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                            <label for="inputRoom" data-lang="adultos">Adulto</label>
-                                            <select name="room" class="form-control tm-select" id="inputRoom">
-                                                <option value="0" selected>0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>                                        
-                                        </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
-                                            <label for="inputAdult" data-lang="reducido">Reducido</label>     
-                                            <select name="adult" class="form-control tm-select" id="inputAdult">
-                                                <option value="0" selected>0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>                                        
-                                        </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-
-                                            <label for="inputChildren" data-lang="ninos">Niño</label>                                            
-                                            <select name="children" class="form-control tm-select" id="inputChildren">
-                                            	<option value="0" selected>0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                            </select>                                        
-                                        </div>
-                                    </div>
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-                                        <!--label for="inputCity">Choose Your Destination</label>
-                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
-                                            <input type="date" id="datepicker" class="form-control">
-                                        </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
-                                            <select id="time-select" class="form-control"></select>
-                                        </div>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <div class="form-row tm-search-form-row">
-
-                                    <!--div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                        <label for="inputCheckIn">Seleccione fecha</label>
-                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
-                                    </div>
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                        <label for="inputCheckOut">Elige hora</label>
-                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora">
-                                    </div-->
-                                    <div class="form-group tm-form-group tm-form-group-pad" style="margin-top: 2px;">
-                                        <label for="btnSubmit">&nbsp;</label>
-                                        <span type="submit" class="btn btn-primary tm-btn text-uppercase" id="btnSubmit" data-lang="reservar">Reservar ahora</span>
-                                    </div>
-                                </div>                              
-                            </form>                             
-
-                        </div> <!-- row -->
-                        <div class="tm-banner-overlay"></div>
-                    </div>  <!-- .container -->                   
-                </div>     <!-- .tm-container-outer -->                 
+            <section class="pg-container">
+                <div class="pg-position">
+                    <a class="pg-a" href="index.html">1.Selection </a> > <a class="pg-a" style="text-decoration: underline">2.Contact details</a>><a class="pg-a">3.Payments details</a> 
+                </div>                  
+                <div class="pg-resume row">
+                    <div class="pg-formulario col-8">
+                        <span class="pg-title">Secure check out</span>
+                        <form action="" method="post" class="tm-contact-form">
+                            <div class="form-group tarjeta-name">
+                                <input type="text" id="contact_name" name="contact_name" class="form-control name tipe-tar" placeholder="First name *"  required/>
+                                <input type="text" id="contact_name" name="contact_name" class="form-control last tipe-tar" placeholder="Last name *"  required/>
+                            </div>
+                            <div class="form-group tarjeta-name">
+                                <input type="text" id="contact_name" name="contact_name" class="form-control name tipe-tar" placeholder="Email *"  required/>
+                                <input type="text" id="contact_name" name="contact_name" class="form-control last tipe-tar" placeholder="Verify email *"  required/>
+                            </div>
+                            <div class="form-group phone">
+                                <input type="text" id="contact_name" name="contact_name" class="form-control pais tipe-tar" placeholder="Country *"  required/>
+                                <input type="text" id="contact_name" name="contact_name" class="form-control number tipe-tar" placeholder="Phone number *"  required/>
+                            </div>
+                            <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase"><i class="fa fa-lock" aria-hidden="true"></i> Continue and pay</button>
+                        </form>
+                    </div>
+                    <div class="pg-pedido">
+                        <span class="pg-title2">Booking details</span>
+                        <div class="booking">
+                            <div class="pg-booking-header">
+                                <img src="https://parkguell-tickets.org/wp-content/uploads/2022/12/dorian-d1-ZX-BTxs0Nl0-unsplash-scaled.jpg" class="pg-att" alt=""  sizes="(max-width: 300px) 100vw, 300px">
+                                <span class="booking-ticket">Park Guell Tickets</span>
+                            </div>
+                            <div class="booking-row">
+                                <div class="booking-info">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i><p class="booking-details" id="fecha"></p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i><p class="booking-details" id="hora"></p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i><p class="booking-details" id="adulto"></p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-user-o" aria-hidde="true"></i><p class="booking-details" id="reducido"></p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i><p class="booking-details" id="nino"></p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-times" aria-hidden="true"></i><p class="booking-details">Non-refundable</p>
+                                </div>
+                                <div class="booking-info">
+                                    <i class="fa fa-times" aria-hidden="true"></i><p class="booking-details">Non editable</p>
+                                </div>
+                            </div>  
+                            <div class="booking-bottom">
+                                <span>Total:</span> <span id="total"></span>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
             </section>
+
 
             
         </div>
     </div>
+    <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+    <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
 
             <!--div class="tm-container-outer tm-position-relative" id="tm-section-4">
                 <div id="google-map"></div>
