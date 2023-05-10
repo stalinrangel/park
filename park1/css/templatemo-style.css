@@ -36,6 +36,15 @@ p:last-child { margin-bottom: 0; }
     margin-left: 10px;
 }
 
+.total{
+    text-align: end;
+    font-size: 15px !important;
+    color: #0E0E0E !important;
+}
+.calculado{
+    visibility: hidden;
+}
+
 .tm-page-wrap { 
     max-width: 1400px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
@@ -197,6 +206,7 @@ label { font-weight: 700; }
     max-width: 830px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 10px;
     border-radius: 7px;
 }
 
@@ -756,6 +766,10 @@ footer p { color: white; }
 }
 
 @media screen and (max-width: 767px) {
+    .tm-about-text-wrap { 
+        padding: 0px 10px 0px 10px;
+        text-align: justify; 
+    }
     .form-control{
         padding: 4px 0px 4px 0px;   
     }
@@ -791,6 +805,9 @@ footer p { color: white; }
         width: 100%;
         margin: 0px;
     }    
+    .tm-form-group-1{
+        margin-top: 3px;
+    }
 }
 @media screen and (max-width: 490px) {
     .tm-top-bar .navbar-brand img { 

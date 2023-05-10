@@ -97,23 +97,13 @@ http://www.templatemo.com/tm-511-journey
 
                             <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
                                 <div class="form-row tm-search-form-row">                                
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-                                        <!--label for="inputCity">Choose Your Destination</label>
-                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha">
-                                        </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                            <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora">
-                                        </div>
-                                    </div>
+                                    
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
                                             <label for="inputRoom" data-lang="adultos">Adulto</label>
                                             <select name="room" class="form-control tm-select" id="inputRoom">
-                                                <option value="1" selected>1</option>
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -122,13 +112,13 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="7">7</option>
                                                 <option value="8">8</option>
                                                 <option value="9">9</option>
-                                                <option value="10">10</option>
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
                                             <label for="inputAdult" data-lang="reducido">Reducido</label>     
                                             <select name="adult" class="form-control tm-select" id="inputAdult">
-                                                <option value="1" selected>1</option>
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -137,7 +127,6 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="7">7</option>
                                                 <option value="8">8</option>
                                                 <option value="9">9</option>
-                                                <option value="10">10</option>
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
@@ -157,8 +146,22 @@ http://www.templatemo.com/tm-511-journey
                                             </select>                                        
                                         </div>
                                     </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <!--label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
+                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+                                            <input type="date" id="datepicker" class="form-control">
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputCheckOut" data-lang="hora">Elige hora</label>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
+                                            <select id="time-select" class="form-control"></select>
+                                        </div>
+                                    </div>
                                 </div> <!-- form-row -->
-                                <div class="form-row tm-search-form-row">
+                                <div class=" tm-search-form-row">
 
                                     <!--div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
                                         <label for="inputCheckIn">Seleccione fecha</label>
@@ -168,9 +171,11 @@ http://www.templatemo.com/tm-511-journey
                                         <label for="inputCheckOut">Elige hora</label>
                                         <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora">
                                     </div-->
-                                    <div class="form-group tm-form-group tm-form-group-pad">
+                                    <div class="form-group tm-form-group-pad total" style="margin-top: 2px;">
+                                        <span class="calculado" id="total1">Total:</span><span class="calculado" id="total2" style="font-weight: bold;"></span>
                                         <label for="btnSubmit">&nbsp;</label>
-                                        <button type="submit" class="btn btn-primary tm-btn text-uppercase" id="btnSubmit" data-lang="reservar">Reservar ahora</button>
+                                        <span type="submit" class="btn btn-primary tm-btn text-uppercase" id="btnSubmit" data-lang="reservar">Reservar ahora</span>
+                                        
                                     </div>
                                 </div>                              
                             </form>                             
@@ -507,9 +512,9 @@ http://www.templatemo.com/tm-511-journey
                         <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
                     </div> <!-- tab-pane -->
                     
-                    <!-- Tab 4 -->
+                    <!-- Tab 4 >
                     <div class="tab-pane fade show active" id="4a">
-                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag >
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
                                 <img src="img/r1.jpg" alt="Image" class="img-fluid tm-recommended-img">
@@ -565,7 +570,7 @@ http://www.templatemo.com/tm-511-journey
                             </div>    
                         </div>                        
 
-                        <!--a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a-->
+                        <!--a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
                     </div> <!-- tab-pane -->
                     
                     <!-- Tab 5 -->
@@ -750,9 +755,9 @@ http://www.templatemo.com/tm-511-journey
                 </div>
             </div>
 
-            <!--div class="tm-container-outer tm-position-relative" id="tm-section-4">
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
                 <div id="google-map"></div>
-                <form action="index.html" method="post" class="tm-contact-form">
+                <!--form action="index.html" method="post" class="tm-contact-form">
                     <div class="form-group tm-name-container">
                         <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                     </div>
@@ -766,7 +771,7 @@ http://www.templatemo.com/tm-511-journey
                         <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
-                </form>
+                </form-->
             </div> <!-- .tm-container-outer -->
 
             <footer class="tm-container-outer">
@@ -797,8 +802,8 @@ http://www.templatemo.com/tm-511-journey
 
         function initialize() {
             var mapOptions = {
-                zoom: 16,
-                center: new google.maps.LatLng(37.769725, -122.462154),
+                zoom: 16, 
+                center: new google.maps.LatLng(41.414494, 2.152695),
                 scrollwheel: false
             };
 
@@ -865,7 +870,7 @@ http://www.templatemo.com/tm-511-journey
                 slidesToScroll: 1
             });
 
-            //loadGoogleMap();                                       // Google Map                
+            loadGoogleMap();                                       // Google Map                
             $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
         });
         // js

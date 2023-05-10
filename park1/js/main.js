@@ -2,6 +2,118 @@ $(document).ready(function(){
   
   
 window.onload = function () {
+
+  const btnSubmit = document.getElementById("btnSubmit");
+  const total1 = document.getElementById("total1");
+  const total2 = document.getElementById("total2");
+  let select = document.getElementById("time-select");
+
+  
+  select.onclick = function ( e ) {
+    console.log(e.target.value)
+    
+  };
+
+  var calcular = function(){
+    if (datepicker.value && select.value && inputRoom.value && inputAdult.value && inputChildren.value) {
+      
+      let costo=parseInt(inputRoom.value)*14+parseInt(inputAdult.value)*11+parseInt(inputChildren.value);
+      console.log(costo)
+      if (costo>0) {
+        
+        total1.style.visibility="visible";
+        total2.style.visibility="visible";
+        document.getElementById("total2").innerHTML=costo+"€";
+      }else{
+        total1.style.visibility="hidden";
+        total2.style.visibility="hidden";
+      }
+      
+
+    }
+  }
+  
+  btnSubmit.onclick = function () {
+    console.log('btnSubmit');
+    console.log(datepicker.value);//fecha
+    console.log(select.value);//hora
+    console.log(inputRoom.value);//adulto
+    console.log(inputAdult.value);//reducido
+    console.log(inputChildren.value);//niño
+
+    localStorage.setItem('fecha',datepicker.value);
+    localStorage.setItem('hora',select.value);
+    localStorage.setItem('adulto',inputRoom.value);
+    localStorage.setItem('reducido',inputAdult.value);
+    localStorage.setItem('nino',inputChildren.value);
+
+    window.location.href = "pagos.html";
+  }
+
+  
+  var loadSelect = function(date){
+    //select.remove();
+    select.options.length = 0;
+    
+    const fecha = new Date(date);
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = now.getMonth()+1;
+    const dd = now.getDay();
+    
+    // Round the minutes up to the nearest 30
+    const minutes = now.getMinutes();
+    const roundedMinutes = Math.ceil(minutes / 30) * 30;
+
+    // Set the current time to the rounded time
+    now.setMinutes(roundedMinutes);
+    now.setSeconds(0);
+    now.setMilliseconds(0);
+
+    // Add options to the select element every 30 minutes
+    
+    //
+    setTimeout(() => {
+      if (fecha.getDate()!=now.getDate()) {
+        for (let i = 0; i < 48; i++) {
+
+          const optionTime = new Date(now.getTime() + i * 30 * 60 * 1000);
+          const optionText = optionTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          const optionValue = optionTime.toISOString();
+          //console.log(optionValue)
+          const option = new Option(optionText, optionText);
+          let arreglo = optionText.split(":");
+          //console.log(arreglo[0])
+          if ((arreglo[0]!='00'&&arreglo[0]!='01'&&arreglo[0]!='02'&&arreglo[0]!='03'&&arreglo[0]!='04'&&arreglo[0]!='05'&&arreglo[0]!='06')&&arreglo[0]<20) {
+            
+            select.add(option);
+            
+          }
+          if (arreglo[0]=='00') {
+          // break;
+          }  
+        }
+      }else{
+        for (let i = 0; i < 24; i++) {
+          const optionTime = new Date(now.getTime() + i * 30 * 60 * 1000);
+          const optionText = optionTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          const optionValue = optionTime.toISOString();
+          const option = new Option(optionText, optionValue);
+          let arreglo = optionText.split(":");
+          //console.log(arreglo[0])
+          if (arreglo[0]<20) {
+            select.add(option);
+            
+          }
+          if (arreglo[0]==22) {
+            break;
+          }  
+        }
+      }
+    }, 200);
+  }
+
+
     //setTimeout(() => {
       
    // }, 1000);
@@ -30,6 +142,46 @@ window.onload = function () {
         loadLang('it');
       }
   };*/
+
+  const datepicker = document.getElementById("datepicker");
+
+  datepicker.addEventListener("change", function() {
+    const selectedDate = datepicker.value;
+    console.log("Fecha seleccionada:", selectedDate);
+    loadSelect(selectedDate);
+    calcular();
+  });
+  select.addEventListener("change", function(e) {
+    console.log('select')
+    calcular();
+  });
+  inputRoom.addEventListener("change", function(e) {
+    console.log('inputRoom')
+    calcular();
+    numero();
+  });
+  inputAdult.addEventListener("change", function(e) {
+    console.log('inputAdult')
+    calcular();
+    numero();
+  });
+  inputChildren.addEventListener("change", function(e) {
+    console.log('inputChildren')
+    calcular();
+    numero();
+  });
+
+  var numero = function(lang){
+    let n=parseInt(inputRoom.value)+parseInt(inputAdult.value)+parseInt(inputChildren.value);
+    console.log(n);
+    if (n>9) {
+      alert('The maximum number of entries must be between 1 and 9.')
+      inputRoom.value=0;
+      inputAdult.value=0
+      inputChildren.value=0;
+    }
+  };
+  
   var eng = document.getElementById( 'eng' );
   var esp = document.getElementById( 'esp' );
   var fra = document.getElementById( 'fra' );
