@@ -13,7 +13,7 @@ window.onload = function () {
     console.log(e.target.value)
     
   };
-
+  var costoTotal=0;
   var calcular = function(){
     if (datepicker.value && select.value && inputRoom.value && inputAdult.value && inputChildren.value) {
       
@@ -25,6 +25,7 @@ window.onload = function () {
         total2.style.visibility="visible";
         document.getElementById("total2").innerHTML=costo+"€";
         localStorage.setItem('total',costo+"€");
+        costoTotal=costo;
       }else{
         total1.style.visibility="hidden";
         total2.style.visibility="hidden";
@@ -47,7 +48,7 @@ window.onload = function () {
     localStorage.setItem('adulto',inputRoom.value);
     localStorage.setItem('reducido',inputAdult.value);
     localStorage.setItem('nino',inputChildren.value);
-    if (costo>0) {
+    if (costoTotal>0) {
       window.location.href = "pagos.html";
     }
     
