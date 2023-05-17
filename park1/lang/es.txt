@@ -1,6 +1,8 @@
 titulo-web=>Park Güell
 menu1=>Park Güell Tickets
-menu2=>Destinos
+menu2=>Cómo llegar
+menu3=>Reglas
+menu4=>Monumentos
 fecha=>Seleccion una fecha
 hora=>Elige una hora
 adultos=>Adulto
