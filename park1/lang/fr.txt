@@ -40,6 +40,78 @@ politica=>Politique en matière de cookies
 privacidad=>Politique de confidentialité
 terminos=>Modalités et conditions
 condiciones=>Conditions générales d’accès et d’utilisation
+ubi1=>Localisation
+ubi2=><b>Adresse:</b> 08024 Barcelone, Espagne
+ubi3=><b>Point de repère le plus proche:</b> Casa Vicens (1.4 km)
+ubi4=>Le parc Güell se trouve sur les collines du Carmel à Barcelone, entre les quartiers de Gracia et Horta-Guinardo. Il se trouve dans le voisinage de El Carmel, Vallcarca I els Penitents, La Salut, El Coll, et Can Baro. Il s’étend sur les deux collines de Les Menes et El Carmel. 17 hectares d’espaces verts entourés de régions urbaines sont prêts à vous accueillir. Il est préférable de l’explorer à pied et avec beaucoup de temps à disposition.
+por1=>Pourquoi nous?
+por2=>Support technique : Notre équipe est dévouée à rendre votre expérience avec nous la plus agréable possible. Nous offrons un support technique de qualité supérieure pour répondre à toutes vos questions et préoccupations. Contactez notre service client pour une assistance rapide et efficace
+por3=>Réservez en ligne à tout moment en choisissant l'option qui correspond le mieux à vos préférences. Évitez les longues files d'attente en réservant ici et gagnez du temps pour profiter pleinement de votre expérience
+por4=>Découvrez la plus grande attraction touristique conçue par le célèbre architecte Gaudí, l'une des figures les plus importantes du modernisme catalan. Ne manquez pas l'opportunité de profiter de cette visite incontournable lors de votre séjour
+intro1=>Le Park Güell, l'une des attractions touristiques les plus populaires de Barcelone, est un incontournable pour les visiteurs qui souhaitent découvrir l'œuvre du célèbre architecte catalan Antoni Gaudí et profiter d'un parc verdoyant unique. Situé sur la colline d'El Carmel dans le quartier Gracia de la ville, le parc offre une vue imprenable sur Barcelone.
+intro2=>Parmi les points d'intérêt à ne pas manquer, on trouve la Plaza de la Naturaleza, l'escalier du dragon, la salle Hipóstila et le musée de la maison Gaudí. La Plaza de la Naturaleza est une immense esplanade entourée de bancs ondulants qui offre une vue panoramique sur la ville.
+intro3=>L'escalier du dragon, quant à lui, est une œuvre d'art en soi, avec son impressionnante créature mythologique qui mène à la Plaza de la Naturaleza. La salle Hipóstila est un ensemble de colonnes qui soutiennent une terrasse et une fontaine, tandis que le musée de la maison Gaudí a été la résidence de l'architecte pendant 20 ans et est aujourd'hui un musée qui retrace sa vie et son travail.
+intro4=>Le Park Güell est un exemple emblématique du modernisme catalan, un style artistique qui se caractérise par l'utilisation de matériaux tels que le fer forgé, la mosaïque et la céramique. Le parc regorge de détails architecturaux et décoratifs dans ce style, comme la célèbre salamandre en mosaïque qui orne l'entrée du parc.
+intro5=>Pour éviter les longues files d'attente, il est recommandé d'acheter les billets en ligne à l'avance, car leur nombre est limité. Il est également conseillé d'arriver tôt pour profiter du parc en toute tranquillité. Le Park Güell est facilement accessible en transports en commun, avec plusieurs options telles que le métro, le bus et les circuits touristiques.
+monu1=>Monuments
+monu2=>L'Escalier du Dragon : avec son dragon en céramique, emblème d'Antoni Gaudí, à l'entrée de l'escalier impressionnant.
+monu3=>Les bancs serpentins : des bancs de pierre en forme de serpent décorés de mosaïques offrant des vues spectaculaires depuis la Plaça de la Natura.
+monu4=>La Salle hypostyle : une immense salle couverte de mosaïques et de 100 colonnes en pierre s'élevant jusqu'à 6 mètres de haut, l'une des constructions les plus spectaculaires du parc.
+monu5=>La Plaça de la Natura : une grande place entourée de constructions modernistes offrant une vue imprenable sur la ville de Barcelone.
+monu6=>Les Trois Viaducs : des viaducs impressionnants alliant modernisme et tradition dans leur conception, offrant une vue panoramique sur le parc et la ville.
+monu7=>Les Pavillons Goal : deux petites constructions décorées de mosaïques à l'entrée du parc, représentant le style moderniste de Gaudí.
+monu8=>Les Jardins de Austria : des jardins situés dans la partie supérieure du parc offrant des vues spectaculaires sur la ville.
+monu9=>Casa Larrard : une maison située à l'entrée du parc transformée en école publique.
+monu10=>Le Portique de la Lavandière : une structure en hémicycle rendant hommage aux lavandières de l'époque.
+monu11=>La Maison Musée Gaudí : un musée dédié à l'œuvre de l'architecte Gaudí, situé dans une maison qu'il a conçue.
+monu12=>Casa Trias : une maison moderniste remarquable à l'entrée du parc, la seule maison privée habitée du parc.
+monu13=>Le Turó de les Tres Creus : un point de vue situé au sommet du parc offrant des vues spectaculaires sur la ville.
+llega1=>Comment se rendre au Parc Güell à Barcelone :
+llega2=>Si vous prévoyez de visiter le Parc Güell, plusieurs options s'offrent à vous pour y arriver:
+llega3=>Métro : Le métro est une option économique et confortable pour se rendre au Parc Güell. La ligne verte (L3) vous mène aux stations Vallcarca ou Lesseps, d'où vous pouvez marcher jusqu'au parc. Il est important de prendre en compte que la marche peut être raide, il est donc recommandé d'être en bonne condition physique.
+llega4=>Bus : Les transports en commun en bus sont une autre option économique pour se rendre au Parc Güell. Les lignes de bus H6, 32, 24 et 92 vous mènent directement à l'entrée du parc. Assurez-vous de vérifier les horaires des bus, car ils peuvent varier en fonction du jour et de la saison.
+llega5=>Taxi : Prendre un taxi jusqu'au Parc Güell est une option rapide et confortable. Cependant, le prix peut varier en fonction de votre point de départ.
+llega6=>Tour en bus : Si vous préférez une option touristique, vous pouvez prendre un tour en bus qui vous mène jusqu'au Parc Güell. Certains des tours les plus populaires sont le Bus Turístic et le Barcelona City Tour. Les deux ont un arrêt au parc et offrent l'option de monter et descendre à différents points touristiques de la ville.
+llega7=>Tour à pied : Si vous préférez une option plus personnalisée et enrichissante, il existe également des tours à pied qui incluent la visite du Parc Güell. Ces tours sont généralement dirigés par des guides locaux et vous permettent de découvrir l'histoire et l'architecture du parc de manière plus détaillée.
+llega8=>Voiture : Se rendre au Parc Güell en voiture peut être une option pour ceux qui préfèrent ce mode de transport. Cependant, il est important de prendre en compte que le parc se trouve dans une zone résidentielle avec des rues étroites et raides, et le stationnement peut être limité. Certaines rues à proximité du parc qui ont des places de stationnement sont Carrer de Marià Labèrnia, Carrer de Ramón y Cajal et Carrer de Baixada de la Glòria.
+como1=>Comment accéder au Parc Güell ?
+como2=>Le Park Güell compte 9 entrées au total, mais seulement 5 sont ouvertes au public. Nous vous présentons les 3 accès principaux afin que vous puissiez facilement rejoindre le parc : Entrée par la Carrer de Olot : L'entrée principale du Park Güell se trouve sur la Carrer de Olot, accessible par la Carrer de Larrard. 
+como3=>Si vous prenez les bus H6, D40 ou 92, ils vous déposeront à l'arrêt Travessera de Dalt. De là, vous n'aurez plus qu'à marcher quelques minutes pour accéder à la zone monumentale du parc par l'impressionnante entrée de la Carrer de Olot.
+como4=>Entrée par la Carretera del Carmel : L'entrée de la Carretera del Carmel est la deuxième plus fréquentée, car elle se trouve à proximité du parking des autocars pour les touristes. 
+como5=>Si vous choisissez ce billet, vous pourrez profiter d'une agréable promenade dans le parc avant d'atteindre la zone monumentale. Les bus Barcelona City Tour et Bus Turístic vous conduiront directement à cette entrée. 
+como6=>Entrée par Av. del Santuari de Sant Josep de la Muntanya : La troisième entrée, située en haut du Parc Güell, dispose d'un escalator qui vous évitera de monter la pente raide du parc. Pour vous rendre à cette entrée, vous pouvez prendre le métro aux stations Lesseps ou Vallcarca et marcher environ 20 minutes jusqu'au parc. Cependant, il est conseillé d'utiliser les escalators de Baixada de la Glòria pour éviter tout effort physique. J'espère que vous trouvez cela utile!
+horario1=>Horaires
+horario2=>Découvrez les horaires d'ouverture du parc pour planifier votre visite en fonction de la saison 
+horario3=>Du 1er juillet au 31 août : ouvert de 9h00 à 19h30
+horario4=>Du 1er septembre au 29 octobre : ouvert de 9h30 à 19h30
+horario5=>Du 30 octobre au 31 décembre : ouvert de 9h30 à 17h30
+horario6=>Du 1er janvier au 28 mars : ouvert de 9h30 à 18h15
+horario7=>Du 29 mars au 31 mai : ouvert de 9h00 à 20h00
+horario8=>Veuillez noter que les touristes ne sont pas autorisés à accéder au parc pendant les périodes de BON DIA BARCELONA, de 7h00 jusqu'à la première plage horaire d'ouverture au public, et de BON VESPRE BARCELONA, de la fin de la dernière plage horaire d'ouverture jusqu'à 22h00.
+normativa1=>Normes du Parc Güell
+normativa2=>Si vous avez acheté des billets pour visiter le Parc Güell, il est important de prendre en compte les règles suivantes:
+normativa3=>L'accès au parc avec les billets achetés est valable jusqu'à 30 minutes après le début du créneau horaire réservé.
+normativa4=>Les changements de date ou d'heure des billets achetés ne sont pas autorisés et aucun remboursement ne sera effectué.
+normativa5=>Vous devez avoir le billet sur vous en tout temps et le montrer au personnel autorisé sur demande.
+normativa6=>Une fois le billet validé, il n'est pas permis de sortir et de rentrer dans le parc.
+normativa7=>Les mineurs de moins de 14 ans doivent être accompagnés d'une personne majeure et sous leur responsabilité.
+normativa8=>Il est interdit de pique-niquer en dehors des zones désignées. Veuillez utiliser les poubelles pour aider à prendre soin du parc.
+normativa9=>Il est strictement interdit d'accéder au parc par les murs d'enceinte ou de franchir les barrières de sécurité.
+normativa10=>Ne pas grimper ni s'appuyer sur les éléments patrimoniaux du parc.
+normativa11=>Pour préserver l'espace, qui est un site du patrimoine de l'UNESCO, l'utilisation de bicyclettes ou de patins n'est pas autorisée.
+normativa12=>Ne déchaussez pas, ne vous allongez pas et ne vous mettez pas nu dans les espaces patrimoniaux et les jardins du parc.
+normativa13=>Il est interdit de fumer dans les zones du parc où cela est explicitement indiqué et balisé.
+normativa14=>Toute activité pouvant causer des dommages aux éléments monumentaux, aux conditions environnementales des espaces naturels et aux installations est interdite.
+normativa15=>Pendant le service de guide à l'intérieur de l'enceinte, l'utilisation de mégaphones, haut-parleurs ou tout autre appareil similaire qui amplifie la voix n'est pas autorisée.
+normativa16=>Les animaux domestiques peuvent entrer dans le parc tant qu'ils sont tenus en laisse. Cependant, ils ne sont pas autorisés à entrer dans certaines zones du parc pour assurer la sécurité et la protection du patrimoine, des personnes et des animaux. Les propriétaires ou compagnons des animaux sont responsables des dommages qu'ils pourraient causer.
+normativa17=>Une fois à l'intérieur du parc, vous pouvez rester jusqu'à l'heure de fermeture.
+normativa18=>Nous espérons que vous apprécierez votre visite au Parc Güell en suivant ces règles et recommandations pour contribuer à la préservation du patrimoine et au respect de l'environnement.
+normativa19=>Conseils pour visiter le Parc Güell : découvrez les meilleurs conseils pour profiter de votre visite au maximum ! Depuis 2020, l'accès est entièrement régulé et la capacité est limitée pour préserver ce site du patrimoine. Il n'y a donc plus de zone gratuite. Pour éviter de vous perdre dans les jardins et les œuvres d'art, demandez une carte imprimée ou un itinéraire recommandé. Avec trois accès différents, choisissez l'entrée appropriée en fonction de vos intérêts. Planifiez votre visite à l'avance pour ne rien manquer des attractions les plus importantes. Découvrez comment profiter au maximum de votre visite au Parc Güell en suivant nos conseils!
+
+
+
+
+
 
 
 
