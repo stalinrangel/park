@@ -41,7 +41,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" >
-                                <img src="img/logo.png" alt="Site logo">
+                                <img src="img/logo.png" alt="Site logo"  onclick="irIndex()">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -68,11 +68,16 @@ http://www.templatemo.com/tm-511-journey
                                         </select-->
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-lang="menu1">Home</a>
+                                        <a class="nav-link" href="index.html" data-lang="menu1"  onclick="irIndex()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#4a" data-lang="menu2">Destinations</a>
+                                        <a class="nav-link" href="como-llegar.html" data-lang="menu2" onclick="llegar()"></a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3" onclick="reglas()"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="monumentos.html" data-lang="menu4" onclick="monumentos()"></a>
                                     
                                 </ul>
                             </div>                            
@@ -185,31 +190,25 @@ http://www.templatemo.com/tm-511-journey
                     </div>  <!-- .container -->                   
                 </div>     <!-- .tm-container-outer -->                 
             </section>
-
+                       
             <section class="tm-p-5 tm-container-outer tm-bg-gray">            
-                <div class="container">
+                <div class="container2">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap">                        
-                            <h2 class="mb-4 tm-about-title" data-lang="entradas"><strong>Entradas</strong></h2>
-                            <p class="mb-4 tm-about-subtitle" data-lang="elpark">El Park Güell es un parque público de la ciudad de Barcelona, España, diseñado por el famoso arquitecto Antoni Gaudí. Situado en la colina del Carmelo, el parque es conocido por su diseño arquitectónico y paisajístico, así como por su coloridos mosaicos y estatuas. Es una popular atracción turística y un Patrimonio de la Humanidad de la UNESCO. Los visitantes del parque pueden explorar sus jardines, terrazas y edificios, y disfrutar de impresionantes vistas de la ciudad.</p>
-                            <!--a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a-->                              
+                            <h2 class="mb-4 tm-about-title" data-lang="entradas"><strong></strong></h2>
+                            <p class="mb-4 tm-about-subtitle" data-lang="intro1"></p> 
+                            <p class="mb-4 tm-about-subtitle" data-lang="intro2"></p> 
+                            <p class="mb-4 tm-about-subtitle" data-lang="intro3"></p> 
+                            <p class="mb-4 tm-about-subtitle" data-lang="intro4"></p> 
+                            <p class="mb-4 tm-about-subtitle" data-lang="intro5"></p> 
                         </div>
                     </div>
-                </div>            
-            </section>
-            
-           
-            <section class="tm-p-5 tm-container-outer tm-bg-white" style="background-color: white;">            
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 mx-auto tm-about-text-wrap">
-                            <h2 class="mb-4 tm-about-title" data-lang="ubi1"><strong>Ubicacion</strong></h2>
-                            <p class="mb-4 tm-about-subtitle" data-lang="ubi2">El Park Güell</p>
-                            <p class="mb-4 tm-about-subtitle" data-lang="ubi3">El Park Güell</p>
-                            <p class="tm-about-subtitle" data-lang="ubi4">Bienvenido</p>
-                        </div>
+                    <div class="row" style="display: flex; justify-content: center; gap: 10px;">
+                        <div ><img src="img/13.jpeg"  class="img_h3" alt=""></div>
+                        <div ><img src="img/11.jpeg"  class="img_h3" alt=""></div>
                     </div>
-                </div>
+                </div>    
+                        
             </section>
 
             <div class="tm-container-outer tm-position-relative" id="tm-section-4">
@@ -239,6 +238,19 @@ http://www.templatemo.com/tm-511-journey
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
     <script> 
+
+        function irIndex() {
+            window.location.href = "index.html";
+        }
+        function llegar() {
+            window.location.href = "como-llegar.html";
+        }
+        function reglas() {
+            window.location.href = "reglas.html";
+        }
+        function monumentos() {
+            window.location.href = "monumentos.html";
+        }
         /* Google Maps
         ------------------------------------------------*/
         var map = '';

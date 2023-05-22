@@ -41,7 +41,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" >
-                                <img src="img/logo.png" alt="Site logo">
+                                <img src="img/logo.png" alt="Site logo"  onclick="irIndex()">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -68,10 +68,16 @@ http://www.templatemo.com/tm-511-journey
                                         </select-->
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-lang="menu1">Home</a>
+                                        <a class="nav-link" href="index.html" data-lang="menu1"  onclick="irIndex()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#4a" data-lang="menu2">Destinations</a>
+                                        <a class="nav-link" href="como-llegar.html" data-lang="menu2" onclick="llegar()"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3" onclick="reglas()"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="monumentos.html" data-lang="menu4" onclick="monumentos()"></a>
                                     </li>
                                     
                                 </ul>
@@ -251,6 +257,19 @@ http://www.templatemo.com/tm-511-journey
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
     <script> 
+        
+        function irIndex() {
+            window.location.href = "index.html";
+        }
+        function llegar() {
+            window.location.href = "como-llegar.html";
+        }
+        function reglas() {
+            window.location.href = "reglas.html";
+        }
+        function monumentos() {
+            window.location.href = "monumentos.html";
+        }
         /* Google Maps
         ------------------------------------------------*/
         var map = '';

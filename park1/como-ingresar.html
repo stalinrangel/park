@@ -41,7 +41,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" >
-                                <img src="img/logo.png" alt="Site logo">
+                                <img src="img/logo.png" alt="Site logo" onclick="irIndex()">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -68,16 +68,17 @@ http://www.templatemo.com/tm-511-journey
                                         </select-->
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="index.html" data-lang="menu1"></a>
+                                        <a class="nav-link" href="index.html" data-lang="menu1"  onclick="irIndex()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="como-llegar.html" data-lang="menu2"></a>
+                                        <a class="nav-link" href="como-llegar.html" data-lang="menu2" onclick="llegar()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3"></a>
+                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3" onclick="reglas()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="monumentos.html" data-lang="menu4"></a>
+                                        <a class="nav-link" href="monumentos.html" data-lang="menu4" onclick="monumentos()"></a>
+                                    </li>
                                     </li>
                                     
                                 </ul>
@@ -196,7 +197,7 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container2">
                     <div class="row">
                         <div class="parentc">
-                            <div class="div1c">
+                            <div class="div1c margin_grid">
                                 <div class="col-xs-12 mx-auto tm-about-text-wrap2">                        
                                     <h2 class="mb-4 tm-about-title" data-lang="como1"><strong></strong></h2>
                                     <ul>
@@ -211,8 +212,6 @@ http://www.templatemo.com/tm-511-journey
                             </div>
                             <div class="div2c"> <img src="img/1.jpg" alt="" class="img_m1"></div>
                             <div class="div3c"> <img src="img/2.jpg" alt="" class="img_m1"></div>
-                            <div class="div4c"> <img src="img/3.jpg" alt="" class="img_m1"></div>
-                            <div class="div5c"> <img src="img/4.jpg" alt="" class="img_m1"></div>
                             </div>
                     </div>
                 </div>            
@@ -246,6 +245,20 @@ http://www.templatemo.com/tm-511-journey
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
     <script> 
+        
+  
+        function irIndex() {
+            window.location.href = "index.html";
+        }
+        function llegar() {
+            window.location.href = "como-llegar.html";
+        }
+        function reglas() {
+            window.location.href = "reglas.html";
+        }
+        function monumentos() {
+            window.location.href = "monumentos.html";
+        }
         /* Google Maps
         ------------------------------------------------*/
         var map = '';

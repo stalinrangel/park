@@ -2,7 +2,8 @@ $(document).ready(function(){
   
   
 window.onload = function () {
-
+  
+  
   const btnSubmit = document.getElementById("btnSubmit");
   const total1 = document.getElementById("total1");
   const total2 = document.getElementById("total2");
@@ -183,6 +184,8 @@ window.onload = function () {
       inputRoom.value=0;
       inputAdult.value=0
       inputChildren.value=0;
+      calcular();
+      numero();
     }
   };
   
@@ -225,12 +228,14 @@ window.onload = function () {
     document.getElementById("idio").innerHTML = " English";
     loadLang('en');
     img.setAttribute("src", "img/en.png");
+    localStorage.setItem('idioma','eng');
     cerrar();
   }
   esp.onclick = function () {
     console.log('esp');
     document.getElementById("idio").innerHTML = " Español";
     img.setAttribute("src", "img/es.png");
+    localStorage.setItem('idioma','esp');
     loadLang('es');
     cerrar();
   }
@@ -238,6 +243,7 @@ window.onload = function () {
     console.log('fra');
     document.getElementById("idio").innerHTML = " Français";
     img.setAttribute("src", "img/fr.png");
+    localStorage.setItem('idioma','fra');
     loadLang('fr');
     cerrar();
   }
@@ -245,6 +251,7 @@ window.onload = function () {
     console.log('ita');
     document.getElementById("idio").innerHTML = " Italiano";
     img.setAttribute("src", "img/it.png");
+    localStorage.setItem('idioma','ita');
     loadLang('it');
     cerrar();
   }
@@ -334,38 +341,63 @@ window.onload = function () {
       /*Validar que no se encuentre en la pagina correspondiente a su idioma*/
       let pagActual = window.location.pathname;
       
-      //console.log(ln)
-      if (ln == 'en-EN') {
+      let ls=localStorage.getItem('idioma');
+      console.log(ls)
+      if (ls!='' && ls!=null) {
+        if (ls=='eng') {
+          console.log('en')
+          loadLang('en');
+          document.getElementById("idio").innerHTML = " English";
+          img.setAttribute("src", "img/en.png");
+        }else if (ls=='esp') {
+          console.log('es')
+          loadLang('es');
+          document.getElementById("idio").innerHTML = " Español";
+          img.setAttribute("src", "img/es.png");
+        }else if (ls=='fra') {
+          console.log('fr')
+          loadLang('fr');
+          document.getElementById("idio").innerHTML = " Français";
+          img.setAttribute("src", "img/fr.png");
+        }else if (ls=='ita') {
+          console.log('it')
+          loadLang('it');
+          document.getElementById("idio").innerHTML = " Italiano";
+          img.setAttribute("src", "img/it.png");
+        }
+      }else{
+        if (ln == 'en-EN') {
         console.log('en')
         loadLang('en');
         //setSelectedValue("English");
         document.getElementById("idio").innerHTML = " English";
         img.setAttribute("src", "img/en.png");
-      } else if (ln == 'es-ES') {
-        console.log('es')
-        loadLang('es');
-        //setSelectedValue("Español");
-        document.getElementById("idio").innerHTML = " Español";
-        img.setAttribute("src", "img/es.png");
-      } else if (ln == 'it-IT'){
-        console.log('it')
-        loadLang('it');
-        //setSelectedValue("Français");
-        document.getElementById("idio").innerHTML = " Français";
-        img.setAttribute("src", "img/fr.png");
-      }else if (ln == 'fr-FR'){
-        console.log('fr')
-        loadLang('fr');
-        //setSelectedValue("Italiano");
-        document.getElementById("idio").innerHTML = " Italiano";
-        img.setAttribute("src", "img/it.png");
-      } else{
-        //alert("Otro idioma");
-        console.log('es')
-        loadLang('es');
-        //setSelectedValue("Español");
-        document.getElementById("idio").innerHTML = " Español";
-        img.setAttribute("src", "img/es.png");
+        } else if (ln == 'es-ES') {
+          console.log('es')
+          loadLang('es');
+          //setSelectedValue("Español");
+          document.getElementById("idio").innerHTML = " Español";
+          img.setAttribute("src", "img/es.png");
+        } else if (ln == 'it-IT'){
+          console.log('it')
+          loadLang('it');
+          //setSelectedValue("Français");
+          document.getElementById("idio").innerHTML = " Italiano";
+          img.setAttribute("src", "img/it.png");
+        }else if (ln == 'fr-FR'){
+          console.log('fr')
+          loadLang('fr');
+          //setSelectedValue("Italiano");
+          document.getElementById("idio").innerHTML = " Français";
+          img.setAttribute("src", "img/fr.png");
+        } else{
+          //alert("Otro idioma");
+          console.log('es')
+          loadLang('es');
+          //setSelectedValue("Español");
+          document.getElementById("idio").innerHTML = " Español";
+          img.setAttribute("src", "img/es.png");
+        }
       }
   //}, 3000);
 }

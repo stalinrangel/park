@@ -21,6 +21,7 @@ http://www.templatemo.com/tm-511-journey
     <link rel="stylesheet" href="css/templatemo-style.css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="js/main.js"></script>                                   <!-- Templatemo style -->
+    <script src="//code.tidio.co/ue7s5xp1zcnncjcufodl5dzwrtwvhs8a.js" async></script>
     <script>
         
     </script>
@@ -41,7 +42,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" >
-                                <img src="img/logo.png" alt="Site logo">
+                                <img src="img/logo.png" alt="Site logo"  onclick="irIndex()">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -67,17 +68,17 @@ http://www.templatemo.com/tm-511-journey
                                             <option value="Italiano"><img src="img/it.png" alt="" class="flag"> Italiano</option>
                                         </select-->
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="index.html" data-lang="menu1"></a>
+                                    <li class="nav-item" onclick="myFunction()">
+                                        <a class="nav-link active" href="index.html" data-lang="menu1" onclick="irIndex()">s</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="como-llegar.html" data-lang="menu2"></a>
+                                        <a class="nav-link" href="como-llegar.html" data-lang="menu2"  onclick="llegar()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3"></a>
+                                        <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3"  onclick="reglas()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="monumentos.html" data-lang="menu4"></a>
+                                        <a class="nav-link" href="monumentos.html" data-lang="menu4"  onclick="monumentos()"></a>
                                     </li>
                                     
                                 </ul>
@@ -96,20 +97,28 @@ http://www.templatemo.com/tm-511-journey
                             <div class="col-xs-12">
                                 <div class="tm-banner-header">
                                     <h1 class="text-uppercase tm-banner-title" data-lang="bienvenidos">Consiga sus entradas para el Park Güell</h1>
-                                    <img src="img/dots-3.png" alt="Dots">
-                                    <p class="tm-banner-subtitle" data-lang="resumen">Bienvenido a las entradas del Park Güell Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso y singular parque de Barcelona. Empiece a planear su visita hoy mismo.</p>
+                                    <img src="img/dots-3.png" class="resumen" alt="Dots">
+                                    <p class="tm-banner-subtitle resumen" data-lang="resumen">Bienvenido a las entradas del Park Güell Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso y singular parque de Barcelona. Empiece a planear su visita hoy mismo.</p>
+                                    <p class="tm-banner-subtitle resumen2" data-lang="resumen2">Bienvenido al Park Güell. Obtenga información y compre entradas para visitar este hermoso parque de Barcelona.</p>
                                     <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
                                 </div>    
                             </div>  <!-- col-xs-12 -->                      
                         </div> <!-- row -->
                         <div class="row tm-banner-row2" id="tm-section-search">
 
-                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                            <form  method="get" class="tm-search-form tm-section-pad-2">
                                 <div class="form-row tm-search-form-row">                                
                                     
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                            <label for="inputRoom" data-lang="adultos">Adulto</label>
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                  <label for="inputRoom" class="popover__title" data-lang="adultos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                  <p class="popover__message" data-lang="adulto2">Adulto entre 13 i 64 años.</p>
+                                                </div>
+                                            </div>
                                             <select name="room" class="form-control tm-select bgg" id="inputRoom">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
@@ -124,7 +133,14 @@ http://www.templatemo.com/tm-511-journey
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
-                                            <label for="inputAdult" data-lang="reducido">Reducido</label>     
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                    <label for="inputRoom" class="popover__title" data-lang="reducido">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                    <p class="popover__message" data-lang="reducido2">Niños de 7 a 12 años, mayores de 65 años, acompañantesde personas con discapacidad, tarjeta rosa reducida</p>
+                                                </div>
+                                            </div>
                                             <select name="adult" class="form-control tm-select bgg" id="inputAdult">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
@@ -139,8 +155,14 @@ http://www.templatemo.com/tm-511-journey
                                             </select>                                        
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-
-                                            <label for="inputChildren" data-lang="ninos">Niño</label>                                            
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                    <label for="inputRoom" class="popover__title" data-lang="ninos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                    <p class="popover__message" data-lang="ninos2">Menores de 6 años, Discapacitados, Acompañantes de de personas con discapacidad de más del 66%, tarjeta rosa gratuita</p>
+                                                </div>
+                                            </div>                                       
                                             <select name="children" class="form-control tm-select bgg" id="inputChildren">
                                             	<option value="0" selected>0</option>
                                                 <option value="1">1</option>
@@ -201,7 +223,9 @@ http://www.templatemo.com/tm-511-journey
                         <div class="col-xs-12 mx-auto tm-about-text-wrap">                        
                             <h2 class="mb-4 tm-about-title" data-lang="entradas"><strong>Entradas</strong></h2>
                             <p class="mb-4 tm-about-subtitle" data-lang="elpark">El Park Güell es un parque público de la ciudad de Barcelona, España, diseñado por el famoso arquitecto Antoni Gaudí. Situado en la colina del Carmelo, el parque es conocido por su diseño arquitectónico y paisajístico, así como por su coloridos mosaicos y estatuas. Es una popular atracción turística y un Patrimonio de la Humanidad de la UNESCO. Los visitantes del parque pueden explorar sus jardines, terrazas y edificios, y disfrutar de impresionantes vistas de la ciudad.</p>
-                            <!--a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a-->                              
+                            <div style="text-align: right;">
+                                <a href="informacion.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue explore</a>                              
+                            </div>
                         </div>
                     </div>
                 </div>            
@@ -210,24 +234,25 @@ http://www.templatemo.com/tm-511-journey
             <div class="tm-container-outer" id="tm-section-2">
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
-                        <img src="img/2.jpg" alt="Image">
-                        <img src="img/3.jpg" alt="Image">
-                        <img src="img/4.jpg" alt="Image">    
+                        <img src="img/4.jpg" alt="Image">  
+                        <img src="img/3.jpg" alt="Image">  
+                        <img src="img/7.jpg" alt="Image">  
+                        <img src="img/2.jpg" alt="Image">  
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="" data-lang="acceso">Entradas</h2>
                         <p class="tm-description" data-lang="tieneTres">El Park Güell tiene tres entradas.</p>
                         <p class="tm-description" data-lang="tiene1">1. Carrer de Larrard: Es la entrada principal. La más hermosa.</p>
                         <p class="tm-description" data-lang="tiene2">El Park Güell tiene tres entradas.</p>
-                        <a href="/como-ingresar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
+                        <p class="tm-description" data-lang="tiene3">El Park Güell tiene tres entradas.</p>
+                        <a href="como-ingresar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>
                 </section>
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
-                        <img src="img/m1.jpg" alt="Image">
-                        <img src="img/m2.jpg" alt="Image">
-                        <img src="img/m3.jpg" alt="Image">
+                        <img src="img/h1.jpg" alt="Image">
+                        <img src="img/h2.jpg" alt="Image">
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
@@ -239,29 +264,52 @@ http://www.templatemo.com/tm-511-journey
                 </section>
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
-                        <img src="img/m5.jpg" alt="Image">
-                        <img src="img/7.jpg" alt="Image">
-                        <img src="img/2.jpg" alt="Image">   
+                        <img src="img/ll1.jpg" alt="Image">
+                        <img src="img/ll2.jpg" alt="Image">
+                        <img src="img/ll3.jpg" alt="Image"> 
+                        <img src="img/ll4.jpg" alt="Image">
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
-                        <h2 class="" data-lang="direcciones">Entradas</h2>
-                        <p class="tm-description" data-lang="direcciones1">1. Carrer de Larrard: Es la entrada principal. La más hermosa.</p>
-                        <p class="tm-description" data-lang="direcciones2">El Park Güell tiene tres entradas.</p>
-                        <a href="monumentos.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
+                        <h2 class="" data-lang="Aparcamiento">Asia's most popular places</h2>
+                        <p class="tm-description" data-lang="Aparcamiento1"></p>
+                        <ul>
+                            <li class="tm-description" data-lang="Aparcamiento2"></li>
+                            <li class="tm-description" data-lang="Aparcamiento3"></li>
+                            <li class="tm-description" data-lang="Aparcamiento4"></li>
+                            <li class="tm-description" data-lang="Aparcamiento5"></li>
+                            <li class="tm-description" data-lang="Aparcamiento6"></li>
+                            <li class="tm-description" data-lang="Aparcamiento7"></li>
+                        </ul>
+                        <a href="como-llegar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                    
                     </div>
                 </section>
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
-                        <img src="img/3.jpg" alt="Image">
-                        <img src="img/2.jpg" alt="Image">
-                        <img src="img/4.jpg" alt="Image">
+                        <img src="img/m1.jpg" alt="Image">
+                        <img src="img/m2.jpg" alt="Image">
+                        <img src="img/m3.jpg" alt="Image">
+                        <img src="img/m5.jpg" alt="Image">
+                        <img src="img/m6.jpg" alt="Image"> 
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
-                        <h2 class="" data-lang="Aparcamiento">Asia's most popular places</h2>
-                        <p class="tm-description" data-lang="Aparcamiento1">Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.</p>
-                        <a href="como-llegar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                        <h2 class="" data-lang="direcciones">Entradas</h2>
+                        <ul>
+                            <li class="tm-description" data-lang="direcciones1">1. Carrer de Larrard: Es la entrada principal. La más hermosa.</li>
+                            <li class="tm-description" data-lang="direcciones2">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones3">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones4">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones5">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones6">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones7">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones8">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones9">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones10">El Park Güell tiene tres entradas.</li>
+                            <li class="tm-description" data-lang="direcciones11">El Park Güell tiene tres entradas.</li>
+                        </ul>
+                        <a href="monumentos.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>                        
 
                 </section>
@@ -269,7 +317,8 @@ http://www.templatemo.com/tm-511-journey
                     <div class="tm-slideshow">
                         <img src="img/9.jpg" alt="Image">
                         <img src="img/3.jpg" alt="Image">
-                        <img src="img/4.jpg" alt="Image">   
+                        <img src="img/4.jpg" alt="Image"> 
+                        <img src="img/6.jpg" alt="Image">  
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="" data-lang="Reglas">Entradas</h2>
@@ -280,15 +329,15 @@ http://www.templatemo.com/tm-511-journey
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/13.jpeg" alt="Image">
+                        <img src="img/11.jpeg" alt="Image">
                         <img src="img/10.jpeg" alt="Image">
-                        <img src="img/2.jpg" alt="Image">
-                        <img src="img/3.jpg" alt="Image">
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
                         <h2 class="" data-lang="Mapa">Asia's most popular places</h2>
                         <p class="tm-description" data-lang="Mapa1">Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.</p>
-                        <a  class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                        <a href="adicional.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
                     </div>                        
 
                 </section>
@@ -769,7 +818,6 @@ http://www.templatemo.com/tm-511-journey
                         <div class="col-xs-12 mx-auto tm-about-text-wrap">
                             <h2 class="mb-4 tm-about-title" data-lang="ubi1"><strong>Ubicacion</strong></h2>
                             <p class="mb-4 tm-about-subtitle" data-lang="ubi2">El Park Güell</p>
-                            <p class="mb-4 tm-about-subtitle" data-lang="ubi3">El Park Güell</p>
                             <p class="tm-about-subtitle" data-lang="ubi4">Bienvenido</p>
                         </div>
                     </div>
@@ -817,6 +865,20 @@ http://www.templatemo.com/tm-511-journey
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
     <script> 
+
+  
+        function irIndex() {
+            window.location.href = "index.html";
+        }
+        function llegar() {
+            window.location.href = "como-llegar.html";
+        }
+        function reglas() {
+            window.location.href = "reglas.html";
+        }
+        function monumentos() {
+            window.location.href = "monumentos.html";
+        }
         /* Google Maps
         ------------------------------------------------*/
         var map = '';
