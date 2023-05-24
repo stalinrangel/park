@@ -359,6 +359,10 @@ http://www.templatemo.com/tm-511-journey
             loadGoogleMap();                                       // Google Map                
             $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
         });
+        $(function() {
+            var today = new Date().toISOString().split('T')[0];
+            $('#datepicker').attr('min', today);
+        });
         // js--------------------------------------------------------------------------------
         
     </script>             
