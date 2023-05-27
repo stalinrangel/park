@@ -99,13 +99,16 @@ window.onload = function () {
           }  
         }
       }else{
+        let op=[];
         for (let i = 0; i < 24; i++) {
           const optionTime = new Date(now.getTime() + i * 30 * 60 * 1000);
           const optionText = optionTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
           const optionValue = optionTime.toISOString();
+          console.log(optionText)
+          op.push(optionText)
           const option = new Option(optionText, optionValue);
           let arreglo = optionText.split(":");
-          //console.log(arreglo[0])
+          console.log(arreglo[0])
           if (arreglo[0]<20) {
             select.add(option);
             
@@ -114,7 +117,11 @@ window.onload = function () {
             break;
           }  
         }
+        op.sort();
+        console.log(op);
       }
+      
+      
     }, 200);
   }
 

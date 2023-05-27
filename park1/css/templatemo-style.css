@@ -27,6 +27,13 @@ a:focus {
 
 p:last-child { margin-bottom: 0; }
 
+ul{
+ list-style-position: outside;   
+}
+::marker{
+    white-space: nowrap !important;
+}
+
 .footer-1{
     display: flex;
     justify-content: center;
@@ -73,6 +80,11 @@ p:last-child { margin-bottom: 0; }
     border-radius: 0;
     outline: none;
     border-radius: 5px 5px 5px 5px;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active{
+    background-color: #CE2B37;
+    
 }
 
 .btn-primary:hover { background: #edac2f; }
@@ -122,11 +134,11 @@ p:last-child { margin-bottom: 0; }
 .nav-link.active, .nav-link:hover {	color: #edac2f;	}
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(104, 199, 187)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(225, 161, 104)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler { 
-    border-color: rgb(104, 199, 187);
+    border-color: rgb(225 161 104);
     border-radius: 0;
     cursor: pointer;
 }
@@ -233,7 +245,7 @@ label { font-weight: 700; }
     display: inline-block;
     font-size: 0.85rem;
     font-weight: 400;  
-    padding: 12px 20px;
+    /*padding: 12px 20px;*/
 }
 
 .tm-btn-white { background: white; }
@@ -273,6 +285,7 @@ label { font-weight: 700; }
     color: #000;
     font-size: 1rem;
     font-weight: 400;
+    text-align: justify;
 }
 .tm-description{
     color: #000;
@@ -842,6 +855,7 @@ footer p { color: white; }
 
 .container2{
     width: 95%;
+    margin: auto;
 }
 
 .resumen{
@@ -864,6 +878,13 @@ footer p { color: white; }
 }
 .n_c2{
     width: 50%;
+}
+.ms-5{
+    margin-left: 5px;
+}
+.select-s{
+    border: 1px solid #CE2B37;
+    padding: 0px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1178,6 +1199,12 @@ footer p { color: white; }
    
 }
 @media screen and (max-width: 490px) {
+    .footer-1{
+        flex-direction: column;
+    }
+    .mb-0{
+        margin-bottom: 15px !important;
+    }
     .parentl1 {
         margin-right: 20px;
         }

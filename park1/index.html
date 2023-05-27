@@ -110,7 +110,7 @@ http://www.templatemo.com/tm-511-journey
                                 <div class="form-row tm-search-form-row">                                
                                     
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">
                                             <div class="popover__wrapper">
                                                 <a href="#">
                                                   <label for="inputRoom" class="popover__title" data-lang="adultos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
@@ -119,7 +119,7 @@ http://www.templatemo.com/tm-511-journey
                                                   <p class="popover__message" data-lang="adulto2">Adulto entre 13 i 64 años.</p>
                                                 </div>
                                             </div>
-                                            <select name="room" class="form-control tm-select bgg" id="inputRoom">
+                                            <select name="room" class="form-control tm-select bgg select-s" id="inputRoom">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -132,7 +132,7 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="9">9</option>
                                             </select>                                        
                                         </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">                                       
                                             <div class="popover__wrapper">
                                                 <a href="#">
                                                     <label for="inputRoom" class="popover__title" data-lang="reducido">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
@@ -141,7 +141,7 @@ http://www.templatemo.com/tm-511-journey
                                                     <p class="popover__message" data-lang="reducido2">Niños de 7 a 12 años, mayores de 65 años, acompañantesde personas con discapacidad, tarjeta rosa reducida</p>
                                                 </div>
                                             </div>
-                                            <select name="adult" class="form-control tm-select bgg" id="inputAdult">
+                                            <select name="adult" class="form-control tm-select bgg select-s" id="inputAdult">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -154,7 +154,7 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="9">9</option>
                                             </select>                                        
                                         </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">
                                             <div class="popover__wrapper">
                                                 <a href="#">
                                                     <label for="inputRoom" class="popover__title" data-lang="ninos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
@@ -163,7 +163,7 @@ http://www.templatemo.com/tm-511-journey
                                                     <p class="popover__message" data-lang="ninos2">Menores de 6 años, Discapacitados, Acompañantes de de personas con discapacidad de más del 66%, tarjeta rosa gratuita</p>
                                                 </div>
                                             </div>                                       
-                                            <select name="children" class="form-control tm-select bgg" id="inputChildren">
+                                            <select name="children" class="form-control tm-select bgg select-s" id="inputChildren">
                                             	<option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -182,12 +182,12 @@ http://www.templatemo.com/tm-511-journey
                                         <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+                                            <input name="inputCheckIn" type="text" class="form-control select-s" id="inputCheckIn" placeholder="Fecha" style="display: none;">
                                             <input type="date" id="datepicker" class="form-control bgg" min="{{ date('Y-m-d') }}">
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
+                                            <input name="check-out" type="text" class="form-control select-s" id="inputCheckOut" placeholder="Hora" style="display: none;">
                                             <select id="time-select" class="form-control bgg"></select>
                                         </div>
                                     </div>
@@ -232,14 +232,14 @@ http://www.templatemo.com/tm-511-journey
             </section>
             
             <div class="tm-container-outer" id="tm-section-2">
-                <section class="tm-slideshow-section">
+                <section class="tm-slideshow-section" style="border-top: 1px solid #CE2B37;">
                     <div class="tm-slideshow">
                         <img src="img/4.jpg" alt="Image">  
                         <img src="img/3.jpg" alt="Image">  
                         <img src="img/7.jpg" alt="Image">  
                         <img src="img/2.jpg" alt="Image">  
                     </div>
-                    <div class="tm-slideshow-description tm-bg-primary">
+                    <div class="tm-slideshow-description tm-bg-primary" style="padding: 0px 50px 50px 50px;">
                         <h2 class="" data-lang="acceso">Entradas</h2>
                         <p class="tm-about-subtitle" data-lang="tieneTres">El Park Güell tiene tres entradas.</p>
                         <p class="tm-about-subtitle" data-lang="tiene1">1. Carrer de Larrard: Es la entrada principal. La más hermosa.</p>
@@ -326,12 +326,12 @@ http://www.templatemo.com/tm-511-journey
                         <a href="reglas.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>
                 </section>
-                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse" style="border-bottom: 1px solid #CE2B37;">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
-                        <img src="img/13.jpeg" alt="Image">
-                        <img src="img/11.jpeg" alt="Image">
                         <img src="img/10.jpeg" alt="Image">
+                        <img src="img/11.jpeg" alt="Image">
+                        <img src="img/13.jpeg" alt="Image">
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">

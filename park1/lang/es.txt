@@ -1,7 +1,7 @@
 titulo-web=>Park Güell
 menu1=>Park Güell Tickets
 menu2=>Cómo llegar
-menu3=>Reglas
+menu3=>Normativa
 menu4=>Monumentos
 fecha=>Seleccion una fecha
 hora=>Elige una hora
@@ -46,7 +46,7 @@ Aparcamiento4=>Taxi
 Aparcamiento5=>Tour en autobús
 Aparcamiento6=>Tour a pie
 Aparcamiento7=>Coche
-Reglas=>Reglas
+Reglas=>Normativa
 Reglas1=>Siendo la atracción más buscada de Barcelona, el Park Güell atrae a gente de todo el mundo. Por eso, para que todo vaya sobre ruedas, aquí tienes algunas normas que debes seguir…
 Mapa=>Información y consejos
 Mapa1=>En algunos portales web se especifica que el Park Güell tiene una parte gratuita donde se puede acceder sin la compra de ticket. Si bien antiguamente era cierto, desde 2020 el parque se regula por completo y se limita el aforo del acceso controlado ya que garantiza una mejor experiencia de visita para los turistas y evita la masificación del lugar, mejorando así la conservación del patrimonio y la seguridad de los visitantes.

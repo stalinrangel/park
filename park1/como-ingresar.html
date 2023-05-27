@@ -102,13 +102,20 @@ http://www.templatemo.com/tm-511-journey
                         </div> <!-- row -->
                         <div class="row tm-banner-row2" id="tm-section-search">
 
-                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                            <form  method="get" class="tm-search-form tm-section-pad-2">
                                 <div class="form-row tm-search-form-row">                                
                                     
                                     <div class="form-group tm-form-group tm-form-group-1">                                    
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                            <label for="inputRoom" data-lang="adultos">Adulto</label>
-                                            <select name="room" class="form-control tm-select bgg" id="inputRoom">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                  <label for="inputRoom" class="popover__title" data-lang="adultos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                  <p class="popover__message" data-lang="adulto2">Adulto entre 13 i 64 años.</p>
+                                                </div>
+                                            </div>
+                                            <select name="room" class="form-control tm-select bgg select-s" id="inputRoom">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -121,9 +128,16 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="9">9</option>
                                             </select>                                        
                                         </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
-                                            <label for="inputAdult" data-lang="reducido">Reducido</label>     
-                                            <select name="adult" class="form-control tm-select bgg" id="inputAdult">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">                                       
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                    <label for="inputRoom" class="popover__title" data-lang="reducido">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                    <p class="popover__message" data-lang="reducido2">Niños de 7 a 12 años, mayores de 65 años, acompañantesde personas con discapacidad, tarjeta rosa reducida</p>
+                                                </div>
+                                            </div>
+                                            <select name="adult" class="form-control tm-select bgg select-s" id="inputAdult">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -136,10 +150,16 @@ http://www.templatemo.com/tm-511-journey
                                                 <option value="9">9</option>
                                             </select>                                        
                                         </div>
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-
-                                            <label for="inputChildren" data-lang="ninos">Niño</label>                                            
-                                            <select name="children" class="form-control tm-select bgg" id="inputChildren">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3 ms-5">
+                                            <div class="popover__wrapper">
+                                                <a href="#">
+                                                    <label for="inputRoom" class="popover__title" data-lang="ninos">Adulto </label><i class="fa fa-info-circle" style="margin-left: 5px; color: #ce2b37 !important;" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="popover__content">
+                                                    <p class="popover__message" data-lang="ninos2">Menores de 6 años, Discapacitados, Acompañantes de de personas con discapacidad de más del 66%, tarjeta rosa gratuita</p>
+                                                </div>
+                                            </div>                                       
+                                            <select name="children" class="form-control tm-select bgg select-s" id="inputChildren">
                                             	<option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -158,12 +178,12 @@ http://www.templatemo.com/tm-511-journey
                                         <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
-                                            <input type="date" id="datepicker" class="form-control bgg">
+                                            <input name="inputCheckIn" type="text" class="form-control select-s" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+                                            <input type="date" id="datepicker" class="form-control bgg" min="{{ date('Y-m-d') }}">
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
+                                            <input name="check-out" type="text" class="form-control select-s" id="inputCheckOut" placeholder="Hora" style="display: none;">
                                             <select id="time-select" class="form-control bgg"></select>
                                         </div>
                                     </div>
