@@ -77,7 +77,7 @@ http://www.templatemo.com/tm-511-journey
                                         <a class="nav-link " href="reglas.html"  target="_blank" data-lang="menu3" onclick="reglas()"></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="monumentos.html" data-lang="menu4" onclick="monumentos()"></a>
+                                        <a class="nav-link" href="monumentos.html" data-lang="menu4" onclick="monumentos()" style="color: #e28d43; text-decoration: underline;"></a>
                                     </li>
                                     
                                 </ul>
@@ -89,13 +89,17 @@ http://www.templatemo.com/tm-511-journey
 
         <div class="tm-page-wrap mx-auto">
             <section class="tm-banner">
-                <div class="tm-container-outer tm-banner-bg2">
+                <div class="tm-container-outer tm-banner-bg">
                     <div class="container">
 
                         <div class="row tm-banner-row tm-banner-row-header">
                             <div class="col-xs-12">
                                 <div class="tm-banner-header">
-        
+                                    <h1 class="text-uppercase tm-banner-title" data-lang="bienvenidos">Consiga sus entradas para el Park Güell</h1>
+                                    <img src="img/dots-3.png" class="resumen" alt="Dots">
+                                    <p class="tm-banner-subtitle resumen" data-lang="resumen">Bienvenido a las entradas del Park Güell Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso y singular parque de Barcelona. Empiece a planear su visita hoy mismo.</p>
+                                    <p class="tm-banner-subtitle resumen2" data-lang="resumen2">Bienvenido al Park Güell. Obtenga información y compre entradas para visitar este hermoso parque de Barcelona.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
                                 </div>    
                             </div>  <!-- col-xs-12 -->                      
                         </div> <!-- row -->
@@ -175,15 +179,15 @@ http://www.templatemo.com/tm-511-journey
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                         <!--label for="inputCity">Choose Your Destination</label>
                                         <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2 mrs-10" >
                                             <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="inputCheckIn" type="text" class="form-control select-s" id="inputCheckIn" placeholder="Fecha" style="display: none;">
-                                            <input type="date" id="datepicker" class="form-control bgg" min="{{ date('Y-m-d') }}">
+                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+                                            <input type="date" id="datepicker" class="form-control bgg select-s2" min="{{ date('Y-m-d') }}">
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control select-s" id="inputCheckOut" placeholder="Hora" style="display: none;">
-                                            <select id="time-select" class="form-control bgg"></select>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
+                                            <select id="time-select" class="form-control bgg select-s"></select>
                                         </div>
                                     </div>
                                 </div> <!-- form-row -->

@@ -84,7 +84,7 @@ ul{
 
 .btn-primary:not([disabled]):not(.disabled):active{
     background-color: #CE2B37;
-    
+    border: 2px solid white;
 }
 
 .btn-primary:hover { background: #edac2f; }
@@ -115,7 +115,7 @@ ul{
     height: 78px;
 }
 
-.tm-top-bar.active .navbar-brand img { height: 50px; }
+.tm-top-bar.active .navbar-brand img {  }
 .tm-top-bar-bg { height: 119px; }
 .tm-top-bar a { color: black; }
 
@@ -138,7 +138,7 @@ ul{
 }
 
 .navbar-toggler { 
-    border-color: rgb(225 161 104);
+    /*border-color: rgb(225 161 104);*/
     border-radius: 0;
     cursor: pointer;
 }
@@ -882,9 +882,36 @@ footer p { color: white; }
 .ms-5{
     margin-left: 5px;
 }
+.mrs-10{
+    padding-right: 10px;
+}
 .select-s{
-    border: 1px solid #CE2B37;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
     padding: 0px;
+}
+.select-s2{
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 7px;
+}
+.border_top{
+    border-top: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+.border_bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+.arriba{
+    position: absolute;
+    /*top: 0; /* position the button 50% from the top of the section */
+    left: 50%; /* position the button 50% from the left of the section */
+    transform: translate(-50%, -50%); 
+    color: white;
+    border: 2px solid white;
+}
+.arriba:not([disabled]):not(.disabled):active{
+    background-color: #CE2B37;
+    border: 2px solid white;
 }
 
 @media screen and (max-width: 1080px) {
@@ -984,8 +1011,13 @@ footer p { color: white; }
 
     .tm-recommended-description-box { width: 450px; }
 }
-
+.telefono{
+    visibility: visible;
+}
 @media screen and (max-width: 986px) {
+    .telefono{
+        visibility: hidden;
+    }
     .tm-slideshow-section { flex-direction: column; }
     .n_container{
         flex-direction: column;
@@ -1091,7 +1123,24 @@ footer p { color: white; }
     .tm-recommended-description-box { width: 270px; }
 }
 
+
 @media screen and (max-width: 767px) {
+    
+    .border_top{
+        border-top: 0px solid rgba(0, 0, 0, 0.25) !important;
+    }
+    .border_bottom{
+        border-bottom: 0px solid rgba(0, 0, 0, 0.25) !important;
+    }
+    .mrs-10{
+        padding-right: 0px;
+    }
+    .select-s2{
+        padding: 9px !important;
+    }
+    .tm-btn{
+        margin-top: 10px;
+    }
     .resumen{
         display: none;
     }

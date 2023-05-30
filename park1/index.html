@@ -69,7 +69,7 @@ http://www.templatemo.com/tm-511-journey
                                         </select-->
                                     </li>
                                     <li class="nav-item" onclick="myFunction()">
-                                        <a class="nav-link active" href="index.html" data-lang="menu1" onclick="irIndex()">s</a>
+                                        <a class="nav-link active" href="index.html" data-lang="menu1" onclick="irIndex()" style="color: #e28d43; text-decoration: underline;">s</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="como-llegar.html" data-lang="menu2"  onclick="llegar()"></a>
@@ -180,15 +180,15 @@ http://www.templatemo.com/tm-511-journey
                                     <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                         <!--label for="inputCity">Choose Your Destination</label>
                                         <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..."-->
-                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2 mrs-10" >
                                             <label for="inputCheckIn" data-lang="fecha">Seleccione fecha</label>
-                                            <input name="inputCheckIn" type="text" class="form-control select-s" id="inputCheckIn" placeholder="Fecha" style="display: none;">
-                                            <input type="date" id="datepicker" class="form-control bgg" min="{{ date('Y-m-d') }}">
+                                            <input name="inputCheckIn" type="text" class="form-control" id="inputCheckIn" placeholder="Fecha" style="display: none;">
+                                            <input type="date" id="datepicker" class="form-control bgg select-s2" min="{{ date('Y-m-d') }}">
                                         </div>
                                         <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                             <label for="inputCheckOut" data-lang="hora">Elige hora</label>
-                                            <input name="check-out" type="text" class="form-control select-s" id="inputCheckOut" placeholder="Hora" style="display: none;">
-                                            <select id="time-select" class="form-control bgg"></select>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Hora" style="display: none;">
+                                            <select id="time-select" class="form-control bgg select-s"></select>
                                         </div>
                                     </div>
                                 </div> <!-- form-row -->
@@ -232,7 +232,7 @@ http://www.templatemo.com/tm-511-journey
             </section>
             
             <div class="tm-container-outer" id="tm-section-2">
-                <section class="tm-slideshow-section" style="border-top: 1px solid #CE2B37;">
+                <section class="tm-slideshow-section border_top">
                     <div class="tm-slideshow">
                         <img src="img/4.jpg" alt="Image">  
                         <img src="img/3.jpg" alt="Image">  
@@ -258,7 +258,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
                         <h2 class="" data-lang="horarios">Asia's most popular places</h2>
                         <p class="tm-about-subtitle" data-lang="horarios1">Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.</p>
-                        <a href="horario.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                        <a href="horario.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>                        
 
                 </section>
@@ -280,7 +280,7 @@ http://www.templatemo.com/tm-511-journey
                             <li class="tm-about-subtitle" data-lang="Aparcamiento6"></li>
                             <li class="tm-about-subtitle" data-lang="Aparcamiento7"></li>
                         </ul>
-                        <a href="como-llegar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                        <a href="como-llegar.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     
                     </div>
                 </section>
@@ -326,7 +326,7 @@ http://www.templatemo.com/tm-511-journey
                         <a href="reglas.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>
                 </section>
-                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse" style="border-bottom: 1px solid #CE2B37;">
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse border_bottom">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
                         <img src="img/10.jpeg" alt="Image">
@@ -337,7 +337,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
                         <h2 class="" data-lang="Mapa">Asia's most popular places</h2>
                         <p class="tm-about-subtitle" data-lang="Mapa1">Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.</p>
-                        <a href="adicional.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" data-lang="leerMas">Continue Reading</a>
+                        <a href="adicional.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary" data-lang="leerMas">Continue Reading</a>
                     </div>                        
 
                 </section>
@@ -812,7 +812,7 @@ http://www.templatemo.com/tm-511-journey
                     </div> <!-- tab-pane -->
                 </div>
             </div>
-            <section class="tm-p-5 tm-container-outer tm-bg-white" style="background-color: white;">            
+            <section class="tm-p-5 tm-container-outer tm-bg-white" style="background-color: white; padding-bottom: 45px !important;">            
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap">
@@ -843,14 +843,16 @@ http://www.templatemo.com/tm-511-journey
                     <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
                 </form-->
             </div> <!-- .tm-container-outer -->
-
+            <a href="#top" class="btn btn-primary tm-btn arriba"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
             <footer class="tm-container-outer">
+                
                 <div class="footer-1">
-                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Adhook.es</p>
-                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="politica">Template Mo</a></p>
-                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="privacidad">Template Mo</a></p>
-                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="terminos">Template Mo</a></p>
-                <a rel="nofollow" class="f1" href="" target="_parent" data-lang="condiciones">Template Mo</a></p>
+                    
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Adhook.es <a class="telefono"> | </a> </p>
+                <p><a rel="nofollow" class="f1" href="" target="_parent" data-lang="politica">Template Mo </a> <a class="telefono"> | </a> </p> 
+                <p><a rel="nofollow" class="f1" href="" target="_parent" data-lang="privacidad">Template Mo |</a> <a class="telefono"> | </a> </p> 
+                <p><a rel="nofollow" class="f1" href="" target="_parent" data-lang="terminos">Template Mo |</a> <a class="telefono"> | </a> </p> 
+                <p><a rel="nofollow" class="f1" href="" target="_parent" data-lang="condiciones">Template Mo</a></p>
                 </div>
             </footer>
         </div>
